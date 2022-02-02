@@ -1,0 +1,47 @@
+﻿
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" />
+
+<html>
+    <div id='Calculator' class="calculator-board">
+        <div class="screen-wrapper">
+            <input type="text" id="Screen" class="screen" readonly/>
+            <input type="hidden" id="Operation"/>
+            <input type="hidden" id="StoredValue"/>
+        </div>
+        <div class="button-panel">
+            <div>
+                <button onclick="enterNumber(7)">7</button>
+                <button onclick="enterNumber(8)">8</button>
+                <button onclick="enterNumber(9)">9</button>
+                <button onclick="operation('Add')">+</button>
+            </div>
+            <div>
+                <button onclick="enterNumber(4)">4</button>
+                <button onclick="enterNumber(5)">5</button>
+                <button onclick="enterNumber(6)">6</button>
+                <button onclick="operation('Subtract')">-</button>
+            </div>
+            <div>
+                <button onclick="enterNumber(1)">1</button>
+                <button onclick="enterNumber(2)">2</button>
+                <button onclick="enterNumber(3)">3</button>
+                <button onclick="operation('Multiply')">x</button>
+            </div>
+            <div>
+                <button onclick="negative()">NEG</button>
+                <button onclick="enterNumber('0')">0</button>
+                <button onclick="decimalPlace()">.</button>
+                <button onclick="operation('Divide')">/</button>
+            </div>
+            <div>
+                <button onclick="clearAll()">CE</button>
+                <button onclick="operation('Equals')">=</button>
+            </div>
+                
+        </div>            
+    </div>
+</html>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
